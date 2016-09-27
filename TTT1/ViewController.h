@@ -9,7 +9,17 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    int numberOfTurns,currentPlayer;
+    BOOL isGameOver;
+    
+    NSArray *winingCombinationArray;
+    NSMutableArray *stateArray;
+    
+}
 
+- (IBAction)tapButton:(id)sender;
+@property (strong, nonatomic) IBOutlet UILabel *playerLabel;
 
 @end
 
